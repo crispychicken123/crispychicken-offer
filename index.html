@@ -1,5 +1,5 @@
 <script>
-fetch("./offers.json")
+fetch("/offers.json")
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById("offers");
