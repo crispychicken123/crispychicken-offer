@@ -1,16 +1,22 @@
-<script>
-fetch("/offers.json")
-  .then(response => response.json())
-  .then(data => {
-    const container = document.getElementById("offers");
-    data.forEach(offer => {
-      const div = document.createElement("div");
-      div.innerHTML = `<h3>${offer.title}</h3><p>${offer.description}</p><b>${offer.price}</b>`;
-      container.appendChild(div);
-    });
-  })
-  .catch(error => {
-    document.getElementById("offers").innerHTML = "⚠️ خطأ في تحميل العروض";
-    console.error("Error loading offers:", error);
-  });
-</script>
+<body>
+  <h1>🍗 Crispy Chicken Offers</h1>
+  <div class="offers" id="offers"></div>
+
+  <script>
+    fetch("offers.json")
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("offers");
+        data.forEach(offer => {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <h2>${offer.title}</h2>
+            <p>${offer.description}</p>
+            <p class="price">${offer.price}</p>
+          `;
+          container.appendChild(card);
+        });
+      });
+  </script>
+</body>
