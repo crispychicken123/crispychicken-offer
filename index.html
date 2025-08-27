@@ -1,46 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crispy Chicken - Special Offers</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="Crispy Chicken Logo" width="80">
-    <h1>🍗 Crispy Chicken - Special Offers</h1>
-  </header>
-
-  <main id="offers-container">
-    <p>Loading offers...</p>
-  </main>
-
-  <footer>
-    <p>© 2025 Crispy Chicken UAE</p>
-  </footer>
-
-  <script>
-    fetch("offers.json")
-      .then(response => response.json())
-      .then(data => {
-        const container = document.getElementById("offers-container");
-        container.innerHTML = "";
-        data.forEach(offer => {
-          const card = document.createElement("div");
-          card.className = "offer-card";
-          card.innerHTML = `
-            <h2>${offer.title}</h2>
-            <p>${offer.description}</p>
-            <strong>${offer.price}</strong>
-          `;
-          container.appendChild(card);
-        });
-      })
-      .catch(err => {
-        document.getElementById("offers-container").innerHTML = "<p>⚠️ خطأ في تحميل العروض</p>";
-        console.error(err);
-      });
-  </script>
-</body>
-</html>
+<script>
+fetch("./offers.json")
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("offers");
+    data.forEach(offer => {
+      const div = document.createElement("div");
+      div.innerHTML = `<h3>${offer.title}</h3><p>${offer.description}</p><b>${offer.price}</b>`;
+      container.appendChild(div);
+    });
+  })
+  .catch(error => {
+    document.getElementById("offers").innerHTML = "⚠️ خطأ في تحميل العروض";
+    console.error("Error loading offers:", error);
+  });
+</script>
