@@ -1,0 +1,37 @@
+[
+  {
+    "title": "The Daily Offer",
+    "desc": "8 Pcs Chicken, 2 Regular Fries, 2 Garlic Sauce",
+    "price": "33.00"
+  },
+  {
+    "title": "The Daily Meal",
+    "desc": "4 Pcs Chicken, 1 Bun,1 Garlic Sauce ,1 Fries",
+    "price": "16.00"
+  },
+  {
+    "title": "Bucket Meal",
+    "desc": "8 Pcs Chicken - 8 Pcs Crispy Strips - 1 Family Fries Box - 1.25L Pepsi - 2 Garlic Sauce",
+    "price": "55.00"
+  },
+  {
+    "title": "12 Pcs Meal",
+    "desc": "12 Pcs Chicken, 1 Family Fries,3 Coleslaw Salad, 3 Garlic Sauce, 3 Buns",
+    "price": "53.00"
+  },
+  {
+    "title": "16 Pcs Meal",
+    "desc": "16 Pcs Chicken, 1 Family Fries,1 Big Coleslaw Salad, 4 Garlic Sauce, 4 Buns",
+    "price": "70.00"
+  },
+  {
+    "title": "20 Pcs Meal",
+    "desc": "20 Pcs Chicken, 1 Family Fries,1 Big Coleslaw Salad, 5 Garlic Sauce, 5 Buns",
+    "price": "85.00"
+  },
+  {
+    "title": "20 Pcs Strips Meal",
+    "desc": "20 Pcs Chicken Strips, 1 Family Fries,1 Big Coleslaw Salad, 4 Garlic Sauce, 4 Buns",
+    "price": "60.00"
+  }
+]

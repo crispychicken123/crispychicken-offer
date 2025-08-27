@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('logo.png') no-repeat center center fixed;
+  background-size: 250px;
+  background-color: #b30000;
+  color: white;
+  text-align: center;
+}
+.container {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  min-height: 100vh;
+}
+.logo {
+  width: 120px;
+}
+.card {
+  background: #fff;
+  color: #000;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
