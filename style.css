@@ -1,26 +1,52 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: url('logo.png') no-repeat center center fixed;
-  background-size: 250px;
-  background-color: #b30000;
-  color: white;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  color: #333;
 }
-.container {
-  background: rgba(0,0,0,0.6);
+
+header {
+  background: #ffcc00;
   padding: 20px;
-  min-height: 100vh;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.logo {
-  width: 120px;
+
+header img {
+  display: block;
+  margin: 0 auto 10px;
 }
-.card {
+
+.offer-card {
   background: #fff;
-  color: #000;
   margin: 15px auto;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   max-width: 400px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.offer-card h2 {
+  margin: 0 0 10px;
+  color: #c0392b;
+}
+
+.offer-card p {
+  margin: 0 0 8px;
+}
+
+.offer-card strong {
+  display: block;
+  margin-top: 5px;
+  color: #27ae60;
+}
+
+footer {
+  background: #f1f1f1;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
 }
