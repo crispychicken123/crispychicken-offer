@@ -1,12 +1,12 @@
 [
   {
-    "title": "Bucket Chicken 5 pcs",
-    "description": "تشكن مقرمش مع صوص خاص",
-    "price": "25 AED"
+    "title": "The Daily Offer",
+    "description": "8 Pcs Chicken, 2 Regular Fries, 2 Garlic Sauce",
+    "price": "33.00 AED"
   },
   {
-    "title": "Family Meal",
-    "description": "12 قطعة مع بطاطس ومشروب",
-    "price": "75 AED"
+    "title": "The Daily Meal",
+    "description": "4 Pcs Chicken, 1 Bun, 1 Garlic Sauce, 1 Fries",
+    "price": "16.00 AED"
   }
 ]
